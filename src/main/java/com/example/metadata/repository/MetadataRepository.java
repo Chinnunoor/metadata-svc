@@ -1,6 +1,6 @@
-package com.example.continage.repository;
+package com.example.metadata.repository;
 
-import com.example.continage.entity.Metadata;
+import com.example.metadata.entity.Metadata;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

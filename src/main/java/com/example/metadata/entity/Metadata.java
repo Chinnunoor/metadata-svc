@@ -1,4 +1,4 @@
-package com.example.continage.entity;
+package com.example.metadata.entity;
 
 import jakarta.persistence.*;
 import java.time.LocalDateTime;

@@ -1,7 +1,7 @@
-package com.example.continage.service;
+package com.example.metadata.service;
 
-import com.example.continage.entity.Metadata;
-import com.example.continage.repository.MetadataRepository;
+import com.example.metadata.entity.Metadata;
+import com.example.metadata.repository.MetadataRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

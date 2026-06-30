@@ -1,4 +1,4 @@
-package com.example.continage;
+package com.example.metadata;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.example.continage;
+package com.example.metadata;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

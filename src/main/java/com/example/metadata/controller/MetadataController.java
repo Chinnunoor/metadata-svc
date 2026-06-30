@@ -1,7 +1,7 @@
-package com.example.continage.controller;
+package com.example.metadata.controller;
 
-import com.example.continage.entity.Metadata;
-import com.example.continage.service.MetadataService;
+import com.example.metadata.entity.Metadata;
+import com.example.metadata.service.MetadataService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

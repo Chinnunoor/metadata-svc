@@ -1,6 +1,6 @@
 spring:
   application:
-    name: continage
+    name: metadata-svc
 
   datasource:
     url: jdbc:postgresql://localhost:5432/metadata_db
