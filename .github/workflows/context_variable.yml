@@ -1,0 +1,31 @@
+name: Print GitHub Context
+
+run-name: Print GitHub Context by ${{ github.actor }}
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  print-github-context:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print full github context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: |
+          echo "$GITHUB_CONTEXT"
+
+      - name: Print important github context variables one by one
+        run: |
+          echo "github.actor        = ${{ github.actor }}"
+          echo "github.repository   = ${{ github.repository }}"
+          echo "github.ref          = ${{ github.ref }}"
+          echo "github.ref_name     = ${{ github.ref_name }}"
+          echo "github.sha          = ${{ github.sha }}"
+          echo "github.event_name   = ${{ github.event_name }}"
+          echo "github.workflow     = ${{ github.workflow }}"
+          echo "github.run_id       = ${{ github.run_id }}"
+          echo "github.run_number   = ${{ github.run_number }}"
+          echo "github.job          = ${{ github.job }}"
