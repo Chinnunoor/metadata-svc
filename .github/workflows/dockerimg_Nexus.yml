@@ -1,12 +1,12 @@
 name: Build and Push Spring Boot Docker Image to Nexus
 
 on:
-  # Runs automatically whenever you push code to main
+  
   push:
     branches:
       - main
 
-  # Lets you run it manually from the Actions tab too
+  
   workflow_dispatch:
 
 permissions:
@@ -23,15 +23,15 @@ jobs:
   build-and-push:
     name: Build JAR, Build Docker Image, Push to Nexus
 
-    # Runs on your Mac, where Docker and Nexus are running.
+    # Runs on your Mac(locally) 
     runs-on: self-hosted
 
     steps:
-      # 1. Download your GitHub project onto your Mac runner
+      
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2. Set up Java for the Maven build
+     
       - name: Set up Java 21
         uses: actions/setup-java@v5
         with:
@@ -39,13 +39,13 @@ jobs:
           java-version: "21"
           cache: maven
 
-      # 3. Build Spring Boot project and create JAR file
+      #  Build Spring Boot project and create JAR file
       - name: Build Maven project
         run: |
           chmod +x mvnw
           ./mvnw clean package -DskipTests
 
-      # 4. Confirm JAR was created
+      #  Confirm JAR was created
       - name: Verify JAR file
         run: |
           echo "Created JAR files:"
