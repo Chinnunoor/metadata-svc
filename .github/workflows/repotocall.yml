@@ -3,5 +3,7 @@ on: workflow_dispatch
 jobs:
   test:
     uses: chinnunoor/github-workflow/.github/workflows/reusable.yaml@main
+    with:
+      java-version: "21"
       
       
